@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment via DANA QRIS</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        .payment-container {
+            background-color: #1e1e1e;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+            padding: 30px;
+            width: 90%;
+            max-width: 400px;
+            text-align: center;
+        }
+        
+        .logo {
+            width: 80px;
+            margin-bottom: 20px;
+        }
+        
+        h1 {
+            font-size: 24px;
+            margin-bottom: 5px;
+            color: #00a3ff;
+        }
+        
+        .subtitle {
+            color: #aaaaaa;
+            margin-bottom: 30px;
+            font-size: 14px;
+        }
+        
+        .qris-container {
+            background-color: #ffffff;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px 0;
+            display: inline-block;
+        }
+        
+        .qris-code {
+            width: 220px;
+            height: 220px;
+            object-fit: contain;
+        }
+        
+        .dana-number {
+            background-color: #2d2d2d;
+            padding: 12px;
+            border-radius: 8px;
+            font-size: 18px;
+            margin: 20px 0;
+            font-weight: bold;
+            color: #00a3ff;
+        }
+        
+        .instructions {
+            text-align: left;
+            margin: 25px 0;
+            font-size: 14px;
+            color: #cccccc;
+        }
+        
+        .instruction-step {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        .step-number {
+            background-color: #00a3ff;
+            color: #121212;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 10px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+        
+        .footer {
+            margin-top: 30px;
+            font-size: 12px;
+            color: #777777;
+        }
+    </style>
+</head>
+<body>
+    <div class="payment-container">
+        <h1>Payment via DANA QRIS</h1>
+        <p class="subtitle">Scan the QR code below using DANA app</p>
+        
+        <div class="qris-container">
+            <img src="https://files.catbox.moe/qpebwd.jpeg" alt="QRIS Payment Code" class="qris-code">
+        </div>
+        
+        <div class="dana-number">082142695995</div>
+        
+        <div class="instructions">
+            <div class="instruction-step">
+                <span class="step-number">1</span>
+                Open DANA app on your phone
+            </div>
+            <div class="instruction-step">
+                <span class="step-number">2</span>
+                Tap 'Pay' and select 'Scan QR Code'
+            </div>
+            <div class="instruction-step">
+                <span class="step-number">3</span>
+                Scan the QR code above or enter the DANA number manually
+            </div>
+            <div class="instruction-step">
+                <span class="step-number">4</span>
+                Enter the payment amount and complete the transaction
+            </div>
+        </div>
+        
+        <div class="footer">
+            After payment, please send the receipt screenshot for verification
+        </div>
+    </div>
+</body>
+</html>
